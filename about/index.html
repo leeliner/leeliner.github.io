@@ -272,7 +272,9 @@
                           '人生如逆旅，我亦是行人。',
                           '凌晨四点钟，看到海棠花未眠。',
                           '你是无意穿堂风，却偏偏引山洪。',
-                          '你再不来，我要下雪了。'],
+                          '你再不来，我要下雪了。',
+                          '还需要多少进程才能走进你的心里？'
+                        ],
                         startDelay: 300,
                         typeSpeed: 100,
                         loop: true,
@@ -289,7 +291,7 @@
 
 <script>
     // 每天切换 banner 图.  Switch banner image every day.
-    $('.bg-cover').css('background-image', 'url(/medias/banner/5.jpg)');
+    $('.bg-cover').css('background-image', 'url(/medias/banner/6.jpg)');
 </script>
 
 
@@ -786,8 +788,7 @@
             Copyright&nbsp;&copy;
             <span id="year">2020</span>
             <a href="/about" target="_blank">IT届专业跑龙套冠军杨咩咩</a>
-            |&nbsp;Powered by&nbsp;<a href="https://hexo.io/" target="_blank">Hexo</a>
-            |&nbsp;Theme&nbsp;<a href="https://github.com/blinkfox/hexo-theme-matery" target="_blank">Matery</a>
+            
             <br>
             
             
@@ -841,11 +842,11 @@
                         diffMinutes * minutes) / seconds);
                     if (startYear == todayYear) {
                         document.getElementById("year").innerHTML = todayYear;
-                        document.getElementById("sitetime").innerHTML = "本站已安全运行 " + diffDays + " 天 " + diffHours +
+                        document.getElementById("sitetime").innerHTML = "本站艰难地维护了 " + diffDays + " 天 " + diffHours +
                             " 小时 " + diffMinutes + " 分钟 " + diffSeconds + " 秒";
                     } else {
                         document.getElementById("year").innerHTML = startYear + " - " + todayYear;
-                        document.getElementById("sitetime").innerHTML = "本站已安全运行 " + diffYears + " 年 " + diffDays +
+                        document.getElementById("sitetime").innerHTML = "本站艰难地维护了 " + diffYears + " 年 " + diffDays +
                             " 天 " + diffHours + " 小时 " + diffMinutes + " 分钟 " + diffSeconds + " 秒";
                     }
                 }
@@ -976,6 +977,13 @@ $(function () {
     </script>-->
     <script type="text/javascript"src="/js/click_show_text.js">
     </script>
+
+    <!--地球站点实时统计
+    <script type="text/javascript" src="//rf.revolvermaps.com/0/0/5.js?i=5dfqx8ya36e&amp;m=0&amp;c=ff0000&amp;cr1=ffffff&amp;v=40&amp;z=13&amp;lx=1000&amp;ly=500" async="async">
+    </script>-->
+
+    <!--背景雪花-->
+    <script type="text/javascript" src="\js\snow.js"></script>
     
     
 <script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"log":false,"pluginJsPath":"lib/","pluginModelPath":"assets/","pluginRootPath":"live2dw/","tagMode":false});</script></body>
