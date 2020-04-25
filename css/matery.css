@@ -35,7 +35,7 @@
 /*大屏幕下(桌面类)的样式*/
 @media only screen and (min-width: 993px) {
     .container {
-        width: 85%;
+        width: 90%;
         max-width: 1125px;
     }
 
@@ -55,13 +55,6 @@
         line-height: 1.85em;
         margin-bottom: 20px;
         position: relative;
-    }
-
-
-    .post-container {
-        width: 90%;
-        margin: 0 auto;
-        max-width: 1250px;
     }
 }
 
