@@ -547,9 +547,9 @@
                           '还需要多少进程才能走进你的心里？'
                         ],
                         startDelay: 400,
-                        typeSpeed: 90,
+                        typeSpeed: 200,
                         loop: true,
-                        backSpeed: 50,
+                        backSpeed: 100,
                         showCursor: true
                     });
                 </script>
@@ -562,7 +562,7 @@
 
 <script>
     // 每天切换 banner 图.  Switch banner image every day.
-    $('.bg-cover').css('background-image', 'url(/medias/banner/32.jpg)');
+    $('.bg-cover').css('background-image', 'url(/medias/banner/14.jpg)');
 </script>
 
 
@@ -1195,17 +1195,21 @@ $(function () {
     <script type="text/javascript"
     color="122 103 238" opacity='0.7' zIndex="-2" count="200" src="//cdn.bootcss.com/canvas-nest.js/1.0.0/canvas-nest.min.js">
     </script>-->
-    <script type="text/javascript"src="/js/click_show_text.js">
-    </script>
+    <script type="text/javascript">
+        //只在桌面版网页启用特效
+        var windowWidth = $(window).width();
+        if (windowWidth > 768) {
+            document.write('<script type="text/javascript" src="/js/sakura.js"><\/script>');
+        }
+        </script>
 
     <!--地球站点实时统计
     <script type="text/javascript" src="//rf.revolvermaps.com/0/0/5.js?i=5dfqx8ya36e&amp;m=0&amp;c=ff0000&amp;cr1=ffffff&amp;v=40&amp;z=13&amp;lx=1000&amp;ly=500" async="async">
     </script>-->
+  <!--单击显示文字-->
+    <script type="text/javascript" src="/js/click_show_text.js"></script>
 
-    <!--背景雪花-->
-    <script type="text/javascript" src="\js\snow.js"></script>
-    
-    
+
 <script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"log":false,"model":{"jsonPath":"/live2dw/assets/z16.model.json"},"display":{"position":"right","width":150,"height":300},"mobile":{"show":false},"react":{"opacity":0.9}});</script></body>
 
 </html>
