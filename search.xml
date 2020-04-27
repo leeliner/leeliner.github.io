@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>Github被攻击分析</title>
+      <link href="/posts/b7e2.html"/>
+      <url>/posts/b7e2.html</url>
+      
+        <content type="html"><![CDATA[<p>前言：<br>以前总渴望着成为一个黑客到处攻击别人的网站，这种成就感是不言而喻的，后来接触的广泛就知道这是违法的行为，这种想法就平淡了许多。就比如当年<a href="https://www.dugoogle.com/yule/1018340.html" target="_blank" rel="noopener">吴翰清</a>3分钟黑掉阿里。又比如说某学生<a href="https://baike.baidu.com/item/%E6%B1%AA%E6%AD%A3%E6%89%AC/15843889?fr=aladdin" target="_blank" rel="noopener">汪正扬</a>直接黑进学校教务系统，不可否认单凭个人之力对网站发起大规模攻击的确很帅。</p><h1 id="Github被攻击实录"><a href="#Github被攻击实录" class="headerlink" title="Github被攻击实录"></a>Github被攻击实录</h1><ul><li>2015年3月28日，GitHub经历了史上最大规模的DDoS攻击，连续两天使用“一种复杂的新技术来劫持无关用户的浏览器对我们的网站发起大量流量”。</li><li>2018年2月28日，GitHub遭到峰值攻击流量高达 1.35Tbps的DDoS攻击，导致官网在一小段时间内无法访问</li><li>2020年3月26日,国内访问浏览器报错，证书无效，但国外访问正常。</li></ul><h2 id="Github-pages-无法访问"><a href="#Github-pages-无法访问" class="headerlink" title="Github pages 无法访问"></a>Github pages 无法访问</h2><p>据蓝点网网友反映，日前（2020.3.26）有攻击者正在大规模的发起<a href="https://baike.baidu.com/item/%E4%B8%AD%E9%97%B4%E4%BA%BA%E6%94%BB%E5%87%BB/1739730?fr=aladdin" target="_blank" rel="noopener">中间人攻击</a>劫持京东和 GitHub 等网站。此次攻击很有可能是基于 DNS 系统或运营商层面发起的，目前受影响的主要是部分地区用户但涉及所有运营商。例如中国移动、联通、电信均可复现劫持问题，但国外网络访问这些站点并未出现异常情况<br><img src="/posts/b7e2/Github.jpg" alt></p><p>从网上查询的信息可以看到此次攻击涉及最广的是 GitHub.io，其次用户访问京东等国内知名网站亦会报错。查看证书信息可以发现这些网站的证书被攻击者使用的自签名证书代替，导致浏览器无法信任从而阻止用户访问。打开这个不受信任的证书，显示该证书的颁布者是 <a href="mailto:346608453@qq.com">346608453@qq.com</a>。</p><p>从攻击者自签名证书留下的这个扣扣号可以在网上搜寻到部分信息：QQ昵称名为心即山灵发起了此次攻击。</p><ul><li>此QQ号从此前某数据库里可检索出使用者为某校高中生，不过尚不清楚是高中在校生还是已经从该校毕业。</li><li>目前关于黑客身份还在多方追踪中尚未确定，至于是高中生还是已经毕业的学生或者其他身份暂时还未知。</li></ul><h2 id="来自广大网友的分析"><a href="#来自广大网友的分析" class="headerlink" title="来自广大网友的分析"></a>来自广大网友的分析</h2><ul><li><p>从攻击者自签名证书留下的这个扣扣号可以在网上搜寻到部分信息，信息显示此前这名攻击者正在学习加密技术</p></li><li><p>这名攻击者还曾在技术交流网站求助他人发送相关源代码，从已知信息判断攻击者可能是在学习后尝试发起攻击。</p></li><li><p>从目前攻击情况来看此次发起攻击的黑客很可能是初学者，而攻击目的很有可能只是在测试但没想到规模如此大</p></li><li><p>但估计他也没想到这次攻击能涉及全国多个省市自治区的网络访问，而且此次攻击已经持续四个小时还没有恢复。</p></li><li><p>另外从这名攻击者如此高调行事的风格来看也极有可能是初学者，毕竟此前尝试大规模劫持的还在牢里没出来呢。</p></li></ul><h2 id="证书留下的QQ号，可能是有意为之。"><a href="#证书留下的QQ号，可能是有意为之。" class="headerlink" title="证书留下的QQ号，可能是有意为之。"></a>证书留下的QQ号，可能是有意为之。</h2><ul><li>理论上说一个初学者应该没这么大能力发起这么大规模的攻击，此规模应该是来自团队或商业竞争。</li><li>如果能发起这么大规模的攻击一定不会这么粗心留下可追寻的蛛丝马迹，他一定知道被发现的后果是什么，不会犯这种低级错误。</li><li>QQ号只是一个引流障眼法，吸引公众的注意力。</li></ul><p>注：<a href="https://blog.say521.cn/archives/345.html" target="_blank" rel="noopener">参考文章</a></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 见闻 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 黑客 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Hello World</title>
       <link href="/posts/3eeb.html"/>
       <url>/posts/3eeb.html</url>
@@ -11,6 +36,12 @@
         <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><pre class="line-numbers language-bash"><code class="language-bash">$ hexo new <span class="token string">"My New Post"</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><pre class="line-numbers language-bash"><code class="language-bash">$ hexo server<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><pre class="line-numbers language-bash"><code class="language-bash">$ hexo generate<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><pre class="line-numbers language-bash"><code class="language-bash">$ hexo deploy<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p>More info: <a href="https://hexo.io/docs/one-command-deployment.html" target="_blank" rel="noopener">Deployment</a></p>]]></content>
       
       
+      
+        <tags>
+            
+            <tag> 日常三联 </tag>
+            
+        </tags>
       
     </entry>
     

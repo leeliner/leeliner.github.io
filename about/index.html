@@ -326,7 +326,7 @@
       
       <i class="fas fa-home" style="zoom: 0.6;"></i>
       
-      <span>Index</span>
+      <span>主页</span>
     </a>
     
   </li>
@@ -337,7 +337,7 @@
       
       <i class="fas fa-tags" style="zoom: 0.6;"></i>
       
-      <span>Tags</span>
+      <span>标签</span>
     </a>
     
   </li>
@@ -348,7 +348,7 @@
       
       <i class="fas fa-bookmark" style="zoom: 0.6;"></i>
       
-      <span>Categories</span>
+      <span>分类</span>
     </a>
     
   </li>
@@ -359,18 +359,7 @@
       
       <i class="fas fa-archive" style="zoom: 0.6;"></i>
       
-      <span>Archives</span>
-    </a>
-    
-  </li>
-  
-  <li class="hide-on-med-and-down nav-item">
-    
-    <a href="/about" class="waves-effect waves-light">
-      
-      <i class="fas fa-user-circle" style="zoom: 0.6;"></i>
-      
-      <span>About</span>
+      <span>文档</span>
     </a>
     
   </li>
@@ -381,18 +370,7 @@
       
       <i class="fas fa-comments" style="zoom: 0.6;"></i>
       
-      <span>Contact</span>
-    </a>
-    
-  </li>
-  
-  <li class="hide-on-med-and-down nav-item">
-    
-    <a href="/friends" class="waves-effect waves-light">
-      
-      <i class="fas fa-address-book" style="zoom: 0.6;"></i>
-      
-      <span>Friends</span>
+      <span>留言板</span>
     </a>
     
   </li>
@@ -429,7 +407,7 @@
 			
 			    <i class="fa-fw fas fa-home"></i>
 			
-			Index
+			主页
 		</a>
           
         </li>
@@ -440,7 +418,7 @@
 			
 			    <i class="fa-fw fas fa-tags"></i>
 			
-			Tags
+			标签
 		</a>
           
         </li>
@@ -451,7 +429,7 @@
 			
 			    <i class="fa-fw fas fa-bookmark"></i>
 			
-			Categories
+			分类
 		</a>
           
         </li>
@@ -462,18 +440,7 @@
 			
 			    <i class="fa-fw fas fa-archive"></i>
 			
-			Archives
-		</a>
-          
-        </li>
-        
-        <li class="m-nav-item">
-	  
-		<a href="/about" class="waves-effect waves-light">
-			
-			    <i class="fa-fw fas fa-user-circle"></i>
-			
-			About
+			文档
 		</a>
           
         </li>
@@ -484,18 +451,7 @@
 			
 			    <i class="fa-fw fas fa-comments"></i>
 			
-			Contact
-		</a>
-          
-        </li>
-        
-        <li class="m-nav-item">
-	  
-		<a href="/friends" class="waves-effect waves-light">
-			
-			    <i class="fa-fw fas fa-address-book"></i>
-			
-			Friends
+			留言板
 		</a>
           
         </li>
@@ -562,7 +518,7 @@
 
     <script>
         // 每天切换 banner 图.  Switch banner image every day.
-        $('.bg-cover').css('background-image', 'url(/medias/banner/4.jpg)');
+        $('.bg-cover').css('background-image', 'url(/medias/banner/21.jpg)');
     </script>
     
 
@@ -578,13 +534,23 @@
                     <div class="post-statis col l4 hide-on-med-and-down" data-aos="zoom-in-right">
                         
 <div class="statis">
-    <span class="count"><a href="/">1</a></span>
+    <span class="count"><a href="/">2</a></span>
     <span class="name">Posts</span>
 </div>
 
 
 
+<div class="statis">
+    <span class="count"><a href="/categories">1</a></span>
+    <span class="name">Categories</span>
+</div>
 
+
+
+<div class="statis">
+    <span class="count"><a href="/tags">2</a></span>
+    <span class="name">Tags</span>
+</div>
 
 
                     </div>
@@ -598,13 +564,23 @@
                                 <div class="post-statis hide-on-large-only" data-aos="zoom-in-right">
                                     
 <div class="statis">
-    <span class="count"><a href="/">1</a></span>
+    <span class="count"><a href="/">2</a></span>
     <span class="name">Posts</span>
 </div>
 
 
 
+<div class="statis">
+    <span class="count"><a href="/categories">1</a></span>
+    <span class="name">Categories</span>
+</div>
 
+
+
+<div class="statis">
+    <span class="count"><a href="/tags">2</a></span>
+    <span class="name">Tags</span>
+</div>
 
 
                                 </div>
@@ -746,7 +722,7 @@
                 name: 'Number of posts',
                 type: 'line',
                 color: ['#6772e5'],
-                data: [0,0,0,0,0,0,0,0,0,0,0,0,1],
+                data: [0,0,0,0,0,0,0,0,0,0,0,0,2],
                 markPoint: {
                     symbolSize: 45,
                     color: ['#fa755a','#3ecf8e','#82d3f4'],
@@ -788,7 +764,7 @@
                 type: 'pie',
                 radius: '50%',
                 color: ['#6772e5', '#ff9e0f', '#fa755a', '#3ecf8e', '#82d3f4', '#ab47bc', '#525f7f', '#f51c47', '#26A69A'],
-                data: [],
+                data: [{"name":"见闻","value":1}],
                 itemStyle: {
                     emphasis: {
                         shadowBlur: 10,
@@ -812,7 +788,7 @@
         xAxis: [
             {
                 type: 'category',
-                data: []
+                data: ["日常三联","黑客"]
             }
         ],
         yAxis: [
@@ -825,7 +801,7 @@
                 type: 'bar',
                 color: ['#82d3f4'],
                 barWidth : 18,
-                data: [],
+                data: [1,1],
                 markPoint: {
                     symbolSize: 45,
                     data: [{
@@ -941,6 +917,18 @@
     <div class="other-skills chip-container" data-aos="zoom-in-up">
         <div class="sub-title center-align"><i class="fa fa-book"></i>&nbsp;&nbsp;Other Skills</div>
         <div class="tag-chips center-align">
+            
+            
+            <a href="/tags/%E6%97%A5%E5%B8%B8%E4%B8%89%E8%81%94/">
+                <span class="chip center-align waves-effect waves-light chip-default">日常三联</span>
+            </a>
+            
+            
+            
+            <a href="/tags/%E9%BB%91%E5%AE%A2/">
+                <span class="chip center-align waves-effect waves-light chip-default">黑客</span>
+            </a>
+            
             
         </div>
     </div>
